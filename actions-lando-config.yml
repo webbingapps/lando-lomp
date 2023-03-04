@@ -1,0 +1,14 @@
+# Disable the "core" lomp plugins
+disablePlugins:
+  - lando-lomp
+
+# Make sure we are dogfooding this plugin for testing purposes
+plugins:
+  "@lando/lomp": /home/runner/work/lomp/lomp
+
+# Disable metrics reporting
+stats:
+  - report: false
+    url: https://metrics.lando.dev
+
+

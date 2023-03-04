@@ -1,0 +1,11 @@
+name: lando-lomp
+recipe: lomp
+config:
+  webroot: .
+  php: 7.4
+  database: mariadb:10.6
+
+# This is important because it lets lando know to test against the plugin in this repo
+# DO NOT REMOVE THIS!
+plugins:
+  "@lando/lomp": ./../../
